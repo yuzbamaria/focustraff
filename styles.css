@@ -130,7 +130,7 @@ a:hover{
         justify-content: center;
         background-color: rgb(204,255,0);
         color: rgb(49,11,68);
-        padding: 10px 30px;
+        padding: 8px 20px;
         border: none;
         outline: none;
         border-radius: 30em;
@@ -211,7 +211,7 @@ a:hover{
 
 .services-description{
     display:block;
-    font-size:30px;
+    font-size:70px;
     text-align:center;
     padding:30px 10px 60px 10px;
 }
@@ -226,7 +226,6 @@ a:hover{
     column-gap:30px;
     row-gap:30px;
     padding:10px 50px;
-    background-image:url(images/2155.jpg);
     background-size: cover;
    
 }
@@ -234,9 +233,10 @@ a:hover{
 .service-box{
     font-weight:bolder;
     text-align: center;
-    border: 3px solid rgb(162, 104, 196);
-    border-radius: 20px;
+    border: 3px rgb(162, 104, 196);
+   
     box-shadow: 10px 5px 5px rgb(196, 195, 195);
+    background-color:rgb(204,255,0);
     
 }
 .service-box:hover{
@@ -247,10 +247,14 @@ a:hover{
 
 .service-name {
     font-weight:bold;
-    padding: 35px 0 10px 0;
+    text-align:left;
+    font-size: 20px;
+    padding: 30px 10px 10px 10px;
 }
 
 .service-explanation{
+    text-align:left;
+    font-weight:500;
     padding: 30px 10px 45px 10px;
 }
 

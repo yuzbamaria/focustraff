@@ -20,12 +20,12 @@ ul{
 }
 
 a{
-    color:white;
+    color:rgb(204,255,0);
     text-decoration:none;
 }
 
 a:hover{
-    color:#746693;
+    color:#fefeff;
 }
 
 .menu li{
@@ -41,7 +41,7 @@ a:hover{
 .logo a{
     font-size:35px;
     font-weight:bold;
-    color:white;
+    color:rgb(204,255,0);
 }
 
 .item.button{
@@ -80,7 +80,7 @@ a:hover{
 }
 
 .bars{
-    background:white;
+    background:rgb(204,255,0);
     display:inline-block;
     height:2px;
     position:relative;
@@ -88,7 +88,7 @@ a:hover{
 }
 
 .bars::before,.bars::after{
-    background:white;
+    background:rgb(204,255,0);
     content:"";
     display:inline-block;
     height:2px;
@@ -128,8 +128,8 @@ a:hover{
 }
     .item.button a{
         justify-content: center;
-        background-color: rgb(162,108,204);
-        color: white;
+        background-color: rgb(204,255,0);
+        color: rgb(49,11,68);
         padding: 10px 30px;
         border: none;
         outline: none;
@@ -171,20 +171,25 @@ a:hover{
     display:flex;
     flex-direction: column;
     height: 40rem;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    background-image: url(images/VP-background.jpg);
+    text-align: right;
+    background-color: rgb(49,11,68);
     background-size: cover;
-    padding: 5rem;
+    padding: 4rem;
+    color:rgb(204,255,0);
 }
 
 #hero h1 {
     font-size: 50px;
+    display:block;
+    text-align:left;
+    padding: 20px;
 }
 
-.h2{
+.h2 {
     font-size: 25px;
+    display:block;
+    text-align:right;
 }
  
 /* SECTION SERVICES */
@@ -200,7 +205,7 @@ a:hover{
     text-align: center;
     font-size:30px;
     font-weight:bold;
-    color:#746693;
+    color:black;
 
 }
 

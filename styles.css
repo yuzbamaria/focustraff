@@ -216,17 +216,15 @@ a:hover{
     padding:30px 10px 60px 10px;
 }
 
-.services-container{
-    display:inline-grid;
-}
 
 .services-container {
     display:grid;
     grid-template-columns:repeat(3, 1fr);
     column-gap:30px;
+    grid-template-rows: 260px 260px 260px;
     row-gap:30px;
     padding:10px 50px;
-    background-size: cover;
+
    
 }
 
@@ -234,7 +232,6 @@ a:hover{
     font-weight:bolder;
     text-align: center;
     border: 3px rgb(162, 104, 196);
-   
     box-shadow: 10px 5px 5px rgb(196, 195, 195);
     background-color:rgb(204,255,0);
     
@@ -258,3 +255,7 @@ a:hover{
     padding: 30px 10px 45px 10px;
 }
 
+.inner{
+    display:flex;
+    flex-direction:column;
+}

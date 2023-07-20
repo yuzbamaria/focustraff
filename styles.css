@@ -196,7 +196,7 @@ a:hover{
 #services{
     background-color:white;
     background-size:cover;
-    height:40rem;
+    height:30rem;
     padding:30px;
 }
 
@@ -221,9 +221,9 @@ a:hover{
     display:grid;
     grid-template-columns:repeat(3, 1fr);
     column-gap:30px;
-    grid-template-rows: 260px 260px 260px;
+    grid-template-rows: auto;
     row-gap:30px;
-    padding:10px 50px;
+    padding:10px 50px 10px 10px;
 
    
 }
@@ -253,9 +253,4 @@ a:hover{
     text-align:left;
     font-weight:500;
     padding: 30px 10px 45px 10px;
-}
-
-.inner{
-    display:flex;
-    flex-direction:column;
 }

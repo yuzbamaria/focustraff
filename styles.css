@@ -208,20 +208,19 @@ a:hover{
         background-color: rgb(49,11,68);
         background-size: cover;
         color:rgb(204,255,0);
+        padding: 25px;
     }
 
     #hero h1 {
         font-size: 50px;
         display:block;
-        text-align:left;
-        padding: 2px;
+        text-align:left;     
     }
 
     #hero h2 {
         font-size: 25px;
         display:block;
         text-align:right;
-        padding:5px;
     }
 }
 
@@ -254,4 +253,133 @@ a:hover{
     }
 }
 
+/* SERVICES SECTION */
 
+    .services-title {
+        text-align: center;
+        padding-top: 50px;
+        font-size: 35px; 
+    }
+
+    .services-title::after {
+        content:"";
+        height: 4px;
+        width: 230px;
+        background-color: rgb(49,11,68);
+        display: block;
+        margin: auto;
+    }
+
+    .services-description {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 45px; 
+        color: rgb(49,11,68);
+    }
+
+    .all-services {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
+        column-gap: 5px;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .service-card {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 20px;
+        padding: 20px 20px;
+        background-color: rgb(204,255,0);
+        border: 3px rgb(162, 104, 196);
+        box-shadow: 10px 5px 5px rgb(196, 195, 195);
+  
+    }
+
+    .service-card:hover{
+        cursor:pointer;
+        transform: scale(1.1);
+    }
+        
+    .service-title {
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 0;
+    }
+
+    .service-text {
+        text-align: center;
+        font-size: 18px;
+        padding: 2px;
+        margin-top: 0;
+    }
+
+/* ARTICLE SERVICES TABLET */ 
+
+@media all and (max-width: 768px) {
+
+    .all-services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .service-card {
+        width: 85%;
+        display: block;
+    }
+}
+
+/* ARTICLE SERVICES MOBILE*/
+@media screen and (max-width: 480px) {
+
+    .services-title {
+        padding-top: 30px;
+        font-size: 25px; 
+    }
+
+    .services-title::after {
+        height: 3px;
+        width: 150px;
+    }
+
+    .services-description {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 25px; 
+    }
+
+    .all-services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .service-card {
+        width: 90%;
+        justify-content: center;
+        padding: 20px 10px;
+        margin: 5px;
+}
+    .service-title {
+        font-size: 16px;
+        text-align: center;
+        padding-bottom: 5px;
+}
+
+    .service-text {
+        text-align: center;
+        font-size: 16px;
+        padding: 5px;
+    }
+}
+
+     
+      
+  

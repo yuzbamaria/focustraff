@@ -62,6 +62,8 @@ a:hover{
 
 .item.button{
     order:2;
+    align-items:center;
+    padding:8px 10px;
 }
 
 .item{
@@ -108,11 +110,12 @@ a:hover{
 
 @media all and (min-width:468px){
     .menu{
-        justify-content: center;
+        justify-content: space-between;
     }
 
-    .logo{
+    .logo a{
         flex:1;
+        font-size:30px;
     }
 
     .item.button{
@@ -142,7 +145,7 @@ a:hover{
         scale: 1.05;
     }
 
-/* DESKTOP MENU) */
+/* DESKTOP MENU */
     @media all and (min-width: 768px) {
         
         
@@ -166,91 +169,89 @@ a:hover{
 
     }
 
-/* SECTION HERO */
-#hero{
-    display:flex;
-    flex-direction: column;
-    height: 40rem;
-    justify-content: center;
-    text-align: right;
-    background-color: rgb(49,11,68);
-    background-size: cover;
-    padding: 4rem;
-    color:rgb(204,255,0);
-}
+/* SECTION HERO DESKTOP*/
+    @media all and (min-width: 768px) {
+        #hero{
+            display:flex;
+            flex-direction: column;
+            height: 40rem;
+            justify-content: center;
+            text-align: right;
+            background-color: rgb(49,11,68);
+            background-size: cover;
+            padding: 4rem;
+            color:rgb(204,255,0);
+        }
 
-#hero h1 {
-    font-size: 50px;
-    display:block;
-    text-align:left;
-    padding: 20px;
-}
+        #hero h1 {
+            font-size: 50px;
+            display:block;
+            text-align:left;
+            padding: 20px;
+        }
 
-.h2 {
-    font-size: 25px;
-    display:block;
-    text-align:right;
+        #hero h2 {
+            font-size: 25px;
+            display:block;
+            text-align:right;
+        }
 }
  
-/* SECTION SERVICES */
-#services{
-    background-color:white;
-    background-size:cover;
-    height:30rem;
-    padding:30px;
+/* SECTION HERO TABLET*/
+@media all and (min-width:468px){
+    #hero{
+        display:flex;
+        flex-direction: column;
+        height: 30rem;
+        justify-content: center;
+        text-align: right;
+        background-color: rgb(49,11,68);
+        background-size: cover;
+        color:rgb(204,255,0);
+    }
+
+    #hero h1 {
+        font-size: 50px;
+        display:block;
+        text-align:left;
+        padding: 2px;
+    }
+
+    #hero h2 {
+        font-size: 25px;
+        display:block;
+        text-align:right;
+        padding:5px;
+    }
 }
 
-.services-title{
-    display:block;
-    text-align: center;
-    font-size:30px;
-    font-weight:bold;
-    color:black;
+/* SECTION HERO MOBILE*/
+@media all and (max-width: 468px) {
+    #hero {
+        display:flex;
+        flex-direction: column;
+        height: 20rem;
+        justify-content: center;
+        text-align: right;
+        background-color: rgb(49,11,68);
+        background-size: cover;
+        padding: 2rem;
+        color:rgb(204,255,0);
+    }
 
+    #hero h1 {
+        font-size:30px;
+        display:block;
+        text-align:center;
+        padding: 10px;
+    }
+
+    #hero h2 {
+        font-size: 15px;
+        display:block;
+        text-align:center;
+        padding:15px;
+    }
 }
 
-.services-description{
-    display:block;
-    font-size:70px;
-    text-align:center;
-    padding:30px 10px 60px 10px;
-}
 
-
-.services-container {
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    column-gap:30px;
-    grid-template-rows: auto;
-    row-gap:30px;
-    padding:10px 50px 10px 10px;
-
-   
-}
-
-.service-box{
-    font-weight:bolder;
-    text-align: center;
-    border: 3px rgb(162, 104, 196);
-    box-shadow: 10px 5px 5px rgb(196, 195, 195);
-    background-color:rgb(204,255,0);
-    
-}
-.service-box:hover{
-    cursor:pointer;
-	transform: scale(1.1);
-
-}
-
-.service-name {
-    font-weight:bold;
-    text-align:left;
-    font-size: 20px;
-    padding: 30px 10px 10px 10px;
-}
-
-.service-explanation{
-    text-align:left;
-    font-weight:500;
-    padding: 30px 10px 45px 10px;
-}

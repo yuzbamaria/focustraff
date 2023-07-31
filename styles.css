@@ -36,6 +36,7 @@ a:hover{
 
 .menu li a{
     display:block;
+    
 }
 
 .logo a{
@@ -322,7 +323,7 @@ a:hover{
 
 /* ARTICLE SERVICES TABLET */ 
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 869px) {
 
     .all-services {
         display: grid;
@@ -380,6 +381,93 @@ a:hover{
     }
 }
 
-     
-      
-  
+/* FOOTER */
+
+.footer {
+    background-color: rgb(49,11,68);
+    padding: 30px 10px;
+
+}   
+
+.footer-container {
+    margin: auto;
+
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 33%;
+    padding: 0 35px;
+}
+
+.footer-col p{
+    font-size: 20px;
+    color: rgb(204,255,0);
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.footer-col p::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(204,255,0);
+    height: 2px;
+    box-sizing: border-box;
+    width: 75px;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 18px;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+    padding-left: 3px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(204, 255, 00);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgb(49,11,68);
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: rgb(204, 255, 00);
+    background-color: white;
+}
+
+/* FOOTER RESPONSIVE*/
+@media screen and (max-width: 768px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .footer-col .social-links {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+

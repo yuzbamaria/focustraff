@@ -170,6 +170,8 @@ a:hover{
 
     }
 
+
+
 /* SECTION HERO DESKTOP*/
     @media all and (min-width: 768px) {
         #hero{
@@ -260,6 +262,8 @@ a:hover{
         text-align: center;
         padding-top: 50px;
         font-size: 35px; 
+        font-weight: bold;
+        color: rgb(49,11,68);
     }
 
     .services-title::after {
@@ -298,10 +302,9 @@ a:hover{
         background-color: rgb(204,255,0);
         border: 3px rgb(162, 104, 196);
         box-shadow: 10px 5px 5px rgb(196, 195, 195);
-  
     }
 
-    .service-card:hover{
+    .service-card:hover {
         cursor:pointer;
         transform: scale(1.1);
     }
@@ -321,7 +324,7 @@ a:hover{
         margin-top: 0;
     }
 
-/* ARTICLE SERVICES TABLET */ 
+/* SECTION SERVICES TABLET */ 
 
 @media all and (max-width: 869px) {
 
@@ -336,7 +339,7 @@ a:hover{
     }
 }
 
-/* ARTICLE SERVICES MOBILE*/
+/* SECTION SERVICES MOBILE*/
 @media screen and (max-width: 480px) {
 
     .services-title {
@@ -381,6 +384,56 @@ a:hover{
     }
 }
 
+/* CASE STUDIES */
+
+.case-studies {
+    background-color: rgb(149, 207, 216);
+}
+.cs-container {
+    width: 20%;
+    margin: 10px auto;
+}
+
+.cs-carousel {
+    border: 2px solid black;
+    height: 400px;
+    position: relative; 
+}
+
+.slider {
+    height: 100%;
+    display: flex;
+    width: 400%;
+    border: 1px solid red;
+    transition: all 0.3s;
+}
+
+.slider section {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.controls .arrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+
+
+
+
 /* FOOTER */
 
 .footer {
@@ -404,7 +457,7 @@ a:hover{
     padding: 0 35px;
 }
 
-.footer-col p{
+.footer-col p {
     font-size: 20px;
     color: rgb(204,255,0);
     margin-bottom: 35px;

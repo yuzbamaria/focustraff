@@ -23,6 +23,18 @@
             })
         })
     </script>
+    <script>
+        const slider = document.querySelector('.slider');
+        
+        const leftArrow = document.querySelector('.left');
+        const rightArrow = document.querySelector('.right');
+
+        var sectionIndex = 0;
+
+        rightArrow.addEventListener('click', function() {
+            slider.style.transform = 'translate(-25%)';
+        });
+    </script>
 </head>
 
 <body>
@@ -115,7 +127,27 @@
         </div>
             
     </section>
-         
+
+<section class="case-studies">
+
+    <div class="cs-container">
+        <div class="cs-carousel">
+            <div class="slider">
+                <section>content for section 1</section>
+                <section>content for section 2</section>
+                <section>content for section 3</section>
+                <section>content for section 4</section>
+            </div>
+            <div class="controls">
+                <span class="arrow left">left</span>
+                <span class="arrow right">right</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+       
 
     <footer class="footer">
         <div class="footer-container">

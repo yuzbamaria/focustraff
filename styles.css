@@ -237,7 +237,7 @@ a:hover{
         text-align: right;
         background-color: rgb(49,11,68);
         background-size: cover;
-        padding: 2rem;
+        padding: 10px;
         color:rgb(204,255,0);
     }
 
@@ -249,7 +249,7 @@ a:hover{
     }
 
     #hero h2 {
-        font-size: 15px;
+        font-size: 18px;
         display:block;
         text-align:center;
         padding:15px;
@@ -358,7 +358,7 @@ a:hover{
     }
 
     .service-card {
-        width: 70%;
+        width: 90%;
         justify-content: center;
         padding: 20px 10px;
         margin: 5px;
@@ -415,7 +415,24 @@ a:hover{
 /* CASE STUDIES */
 
 .case-studies {
-   background-color: rgb(137, 198, 215);
+   background-color: rgb(144, 192, 205);
+}
+
+.cs-title {
+    text-align: center;
+    padding: 50px;
+    font-size: 35px; 
+    font-weight: bold;
+    color: rgb(204, 255, 00);
+}
+
+.cs-title::after {
+    content:"";
+    height: 4px;
+    width: 280px;
+    background-color: rgb(204, 255, 00);
+    display: block;
+    margin: auto;
 }
 
 .cs-container1 {
@@ -428,9 +445,10 @@ a:hover{
 }
 
 .cs-description {
-    font-size: 30px;
+    font-size: 45px;
+    color: rgb(204, 255, 00);
     text-align: center;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .cs-container2 {
@@ -440,7 +458,7 @@ a:hover{
     width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
-    background: white;
+    background: rgb(177, 208, 216);
     box-shadow: 0 15px 25px rgb(32, 33, 34); 
     padding: 30px;
     scroll-snap-type: x mandatory;
@@ -475,7 +493,7 @@ a:hover{
 }
 
 .card h3 {
-    margin-top: 25px;
+    margin: 25px auto;
     color: black;
     font-size: 25px;
     font-weight: 600;
@@ -498,9 +516,6 @@ a:hover{
 
 /* CASE STUDIES  RESPONSIVE*/
 @media screen and (max-width: 960px) {
-    .case-studies {
-        background-color: white;
-     }
     
     .cs-row {
         width: 100%;
@@ -510,16 +525,11 @@ a:hover{
         max-width: 70%;
         width: 100%;
         margin: 30px auto;
-        background: white;
-        box-shadow: 0 15px 25px rgb(32, 33, 34); 
         padding: 20px;
-        scroll-snap-type: x mandatory;
-        overflow-x: scroll;
-        scroll-padding: 30px;
     }
+
     .cs-description {
         font-size: 25px;
-        color: rgb(49,11,68);
         margin: 25px;
         padding: 20px;
     }
@@ -528,44 +538,29 @@ a:hover{
         height: 100px;
         width: 100px;
         padding: 4px;
-        background: white;
-        border: 5px solid black;
-    }
-    
-    .image img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 30%;
-    }
-    
-    .card h3 {
-        margin: 25px auto;
-        color: black;
-        font-size: 18px;
-        font-weight: 600;
     }
     
     .card {
-        margin-top: 4px;
         font-size: 15px;
-        font-weight: 400;
-        text-align: center;
     }
     
     .markers {
         font-size: 30px;
-        font-weight: bold;
-        color: rgb(49,11,68);
-        padding-top: 15px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .case-studies {
-        background-color: white;
-     }
     
+    .cs-title {
+        padding: 30px 0 10px;
+        font-size: 25px; 
+    }
+    
+    .cs-title::after {
+        height: 3px;
+        width: 200px;
+    }
+
     .cs-row {
         width: 100%;
     }
@@ -574,57 +569,14 @@ a:hover{
         max-width: 500px;
         width: 100%;
         margin: 0;
-        background: white;
-        box-shadow: 0 15px 25px rgb(32, 33, 34); 
         padding: 20px;
-        scroll-snap-type: x mandatory;
-        overflow-x: scroll;
-        scroll-padding: 30px;
     }
     .cs-description {
         font-size: 25px;
-        color: rgb(49,11,68);
-        margin: 25px;
+        margin: 10px 0 10px;
         padding: 20px;
     }
-    
-    .card .image {
-        height: 100px;
-        width: 100px;
-        padding: 4px;
-        background: white;
-        border: 5px solid black;
-    }
-    
-    .image img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 30%;
-    }
-    
-    .card h3 {
-        margin: 25px auto;
-        color: black;
-        font-size: 18px;
-        font-weight: 600;
-    }
-    
-    .card {
-        margin-top: 4px;
-        font-size: 15px;
-        font-weight: 400;
-        text-align: center;
-    }
-    
-    .markers {
-        font-size: 30px;
-        font-weight: bold;
-        color: rgb(49,11,68);
-        padding-top: 15px;
-    }
-    
-    
+
 }
     
     

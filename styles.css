@@ -304,6 +304,15 @@ a:hover{
         box-shadow: 10px 5px 5px rgb(196, 195, 195);
     }
 
+    .service-card a {
+        display: block;
+        text-align: center;
+        padding: 30px 20px 5px 20px;
+        font-size: 15px;
+        color: black;
+        text-decoration: underline;
+    }
+
     .service-card:hover {
         cursor:pointer;
         transform: scale(1.1);
@@ -324,7 +333,7 @@ a:hover{
         margin-top: 0;
     }
 
-/* SECTION SERVICES TABLET */ 
+/* SECTION SERVICES RESPONSIVE */ 
 
 @media all and (max-width: 869px) {
 
@@ -339,7 +348,25 @@ a:hover{
     }
 }
 
-/* SECTION SERVICES MOBILE*/
+@media screen and (max-width: 650px) {
+
+    .all-services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .service-card {
+        width: 70%;
+        justify-content: center;
+        padding: 20px 10px;
+        margin: 5px;
+}
+}
+
+
+
 @media screen and (max-width: 480px) {
 
     .services-title {
@@ -371,6 +398,7 @@ a:hover{
         padding: 20px 10px;
         margin: 5px;
 }
+
     .service-title {
         font-size: 16px;
         text-align: center;
@@ -387,49 +415,223 @@ a:hover{
 /* CASE STUDIES */
 
 .case-studies {
-    background-color: rgb(149, 207, 216);
-}
-.cs-container {
-    width: 20%;
-    margin: 10px auto;
+   background-color: rgb(137, 198, 215);
 }
 
-.cs-carousel {
-    border: 2px solid black;
-    height: 400px;
-    position: relative; 
-}
-
-.slider {
-    height: 100%;
+.cs-container1 {
     display: flex;
-    width: 400%;
-    border: 1px solid red;
-    transition: all 0.3s;
+    flex-wrap: wrap;
+}
+.cs-row {
+    width: 43%;
+    margin: auto;
 }
 
-.slider section {
-    flex-basis: 100%;
+.cs-description {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cs-container2 {
     display: flex;
-    justify-content: center;
+    gap: 12px;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: white;
+    box-shadow: 0 15px 25px rgb(32, 33, 34); 
+    padding: 30px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 30px;
+}
+
+.cs-container2 .card {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
     align-items: center;
-   
+    padding: 30px;
+    background:  rgb(204, 255, 00);
+    scroll-snap-align: start;
+    box-shadow: 0 15px 25px rgb(32, 33, 34); 
 }
 
-.controls .arrow {
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
+.card .image {
+    height: 150px;
+    width: 150px;
+    padding: 4px;
+    background: white;
+    border: 5px solid black;
 }
 
-.arrow.left {
-    left: 10px;
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30%;
 }
 
-.arrow.right {
-    right: 10px;
+.card h3 {
+    margin-top: 25px;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
 }
 
+.card {
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.markers {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(49,11,68);
+    padding-top: 15px;
+}
+
+
+/* CASE STUDIES  RESPONSIVE*/
+@media screen and (max-width: 960px) {
+    .case-studies {
+        background-color: white;
+     }
+    
+    .cs-row {
+        width: 100%;
+    }
+
+    .cs-container2 {
+        max-width: 70%;
+        width: 100%;
+        margin: 30px auto;
+        background: white;
+        box-shadow: 0 15px 25px rgb(32, 33, 34); 
+        padding: 20px;
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        scroll-padding: 30px;
+    }
+    .cs-description {
+        font-size: 25px;
+        color: rgb(49,11,68);
+        margin: 25px;
+        padding: 20px;
+    }
+    
+    .card .image {
+        height: 100px;
+        width: 100px;
+        padding: 4px;
+        background: white;
+        border: 5px solid black;
+    }
+    
+    .image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 30%;
+    }
+    
+    .card h3 {
+        margin: 25px auto;
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .card {
+        margin-top: 4px;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .markers {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(49,11,68);
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .case-studies {
+        background-color: white;
+     }
+    
+    .cs-row {
+        width: 100%;
+    }
+
+    .cs-container2 {
+        max-width: 500px;
+        width: 100%;
+        margin: 0;
+        background: white;
+        box-shadow: 0 15px 25px rgb(32, 33, 34); 
+        padding: 20px;
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        scroll-padding: 30px;
+    }
+    .cs-description {
+        font-size: 25px;
+        color: rgb(49,11,68);
+        margin: 25px;
+        padding: 20px;
+    }
+    
+    .card .image {
+        height: 100px;
+        width: 100px;
+        padding: 4px;
+        background: white;
+        border: 5px solid black;
+    }
+    
+    .image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 30%;
+    }
+    
+    .card h3 {
+        margin: 25px auto;
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .card {
+        margin-top: 4px;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .markers {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(49,11,68);
+        padding-top: 15px;
+    }
+    
+    
+}
+    
+    
+    
+
+
+/* OUR TEAM */
 
 
 
@@ -439,13 +641,9 @@ a:hover{
 .footer {
     background-color: rgb(49,11,68);
     padding: 30px 10px;
-
-}   
-
-.footer-container {
     margin: auto;
 
-}
+}   
 
 .footer-row {
     display: flex;

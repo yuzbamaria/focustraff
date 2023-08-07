@@ -420,7 +420,7 @@ a:hover{
 
 .cs-title {
     text-align: center;
-    padding: 50px;
+    padding: 50px 0 25px;
     font-size: 35px; 
     font-weight: bold;
     color: rgb(204, 255, 00);
@@ -445,10 +445,10 @@ a:hover{
 }
 
 .cs-description {
-    font-size: 45px;
+    font-size: 42px;
     color: rgb(204, 255, 00);
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .cs-container2 {

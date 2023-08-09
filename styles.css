@@ -7,7 +7,6 @@
 
 body{
     background-color:rgb(250, 250, 250);
-    font-family:sans-serif;
 }
 
 nav{
@@ -147,9 +146,7 @@ a:hover{
     }
 
 /* DESKTOP MENU */
-    @media all and (min-width: 768px) {
-        
-        
+    @media all and (min-width: 768px) { 
         .item{
             display:block;
             width:auto;
@@ -167,7 +164,6 @@ a:hover{
         .menu li{
             padding: 0 10px;
         }
-
     }
 
 

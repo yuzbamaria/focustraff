@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Quote</title>
+    <link rel="stylesheet" href="/pages/button/form.css"/>
+    <script src="https://kit.fontawesome.com/05be7076d9.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click", function (){
+                if($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                }
+                else{
+                    $(".item").addClass("active");
+                }
+            })
+        })
+    </script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+         <div class="navbar">
+            <ul class="menu">
+                <li class="logo"><a href="#">FocusTraff <i class="fa-solid fa-users-viewfinder fa-sm" style="color: #ccff00;"></i></a></li>
+                <li class="item"><a href="#">Case Studies</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="item"><a href="#">Our team</a></li>
+                <li class="item"><a href="#">Contacts</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+ <section class="form_main">
+
+    <div class="form_title">Headline</div>
+    <div class="form_description">Technical website optimization embraces a set of actions which help to improve user experience (UX) and enable search engines crawl the website. Our SEO team will provide a deep technical audit of your website to ensure that it is configured correctly and can be easily crawled and indexed by search engines. 
+    </div>
+
+    <div class="form_container">  
+        <form onsubmit="sendEmail(); reset(); return false";>
+            <p>GET IN TOUCH</p>
+            <input type="text" id="uname" placeholder="First name*" name="uname" autocomplete="username" required>
+            <input type="text" id="lname" placeholder="Last name*" name="lname" autocomplete="name" required>
+            <input type="url" id="website" placeholder="Website*" name="website" required>
+            <input type="text" id="email" placeholder="Email*" name="email" autocomplete="email" required>
+            <input type="text" id="pnumber" placeholder="Phone number" name="pnumber" autocomplete="tel" required>
+            <textarea id="message" rows="4" placeholder="How can we help?"></textarea>
+            <button type="form_button" value="Send Email" onclick="sendEmail()">Submit</button> 
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-row">
+        <div class="footer-col"> 
+            <p>Company</p>
+                <ul>
+                    <li class="footer-item"><a href="#">About us</a></li>
+                    <li class="footer-item"><a href="#">Our services</a></li>
+                    <li class="footer-item"><a href="#">Privacy policy</a></li>
+                    <li class="footer-item"><a href="#">Terms and conditions</a></li>   
+                </ul>
+        </div>
+        <div class="footer-col"> 
+            <p>Contacts</p>
+                <ul>
+                    <li class="footer-item"><a href="#">Phone</a></li>
+                    <li class="footer-item"><a href="#">Email</a></li>
+                </ul>
+        </div>   
+        <div class="footer-col"> 
+            <p>Follow us</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-linkedin-in fa-xl" style="color: #310b44;"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp fa-xl" style="color: #310b44;"></i></a> 
+                </div>
+        </div>  
+    </div>
+</footer>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript">
+    function sendEmail (){
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "trafftherapy@gmail.com",
+            Password : "s6a4MY4Urp",
+            To : 'yuzba.maria@gmail.com',
+            From : "trafftherapy@gmail.com",
+            Subject : "New Contact Form Enquiry",
+            Body : "And this is the body"
+        }).then(
+        message => alert("mail sent successfully")
+        );
+    }
+</script>
+</body>
+</html>

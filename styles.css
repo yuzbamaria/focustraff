@@ -10,21 +10,24 @@ body{
 }
 
 nav{
-    background: rgb(49,11,68);
+    
     padding: 5px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
 }
 
 ul{
     list-style-type: none;
 }
 
-a{
-    color:rgb(204,255,0);
+.menu li a{
+    color:rgb(49,11,68);
     text-decoration: none;
 }
 
 a:hover{
-    color:#fefeff;
+    color: rgb(162, 104, 196);
 }
 
 .menu li{
@@ -41,14 +44,12 @@ a:hover{
 .logo a{
     font-size:35px;
     font-weight:bold;
-    color:rgb(204,255,0);
+    color: rgb(49,11,68);
 }
 
 .item.button{
     border-bottom:1px #2222 solid;
 }
-
-/* MOBILE MENU */
 .menu{
     display:flex;
     flex-wrap:wrap;
@@ -82,7 +83,7 @@ a:hover{
 }
 
 .bars{
-    background:rgb(204,255,0);
+    background:rgb(49,11,68);
     display:inline-block;
     height:2px;
     position:relative;
@@ -90,7 +91,7 @@ a:hover{
 }
 
 .bars::before,.bars::after{
-    background:rgb(204,255,0);
+    background:rgb(49,11,68);
     content:"";
     display:inline-block;
     height:2px;
@@ -111,6 +112,7 @@ a:hover{
 @media all and (min-width:468px){
     .menu{
         justify-content: space-between;
+
     }
 
     .logo a{
@@ -150,7 +152,6 @@ a:hover{
 
         .menu item{
             font-size: 35px; 
-
         }
 
         .item{
@@ -172,130 +173,170 @@ a:hover{
         .menu ul{
             padding: 0 10px;
         }
-
     }
 
-
-
-/* SECTION HERO DESKTOP*/
-    @media all and (min-width: 1280px) {
-
-        #hero h1 {
-            font-size: 60px;
-            margin-left: 50px;
+@media all and (min-width: 1366px) { 
+        #top {
+            margin: 0 70px;
         }
 
-        #hero h2 {
-            font-size: 45px;
-            margin-right: 70px;
-        }
-    }
-
-    @media all and (min-width: 1920px) {
-        #hero{
-            height: 80rem;
-        }
-        #hero h1 {
-            font-size: 80px;
-            margin-left: 250px;
+        .logo a{
+            font-size:50px;
         }
 
-        #hero h2 {
-            font-size: 85px;
-            margin-right: 300px;
+        .menu li{
+            font-size: 30px;
+            font-weight: bold;
+            padding: 10px 5px;
         }
     }
 
-        
-    @media all and (min-width: 768px) {
-        #hero{
-            display:flex;
-            flex-direction: column;
-            height: 40rem;
-            justify-content: center;
-            text-align: right;
-            background-color: rgb(49,11,68);
-            background-size: cover;
-            padding: 4rem;
-            color:rgb(204,255,0);
-        }
-        
+/* SECTION HERO */
 
-        #hero h1 {
-            font-size: 50px;
-            display:block;
-            text-align:left;
-            padding: 20px;
-        }
-
-        #hero h2 {
-            font-size: 25px;
-            display:block;
-            text-align:right;
-        }
-}
- 
-/* SECTION HERO TABLET*/
-@media all and (min-width:468px){
-    #hero{
-        display:flex;
-        flex-direction: column;
-        height: 30rem;
-        justify-content: center;
-        text-align: right;
-        background-color: rgb(49,11,68);
-        background-size: cover;
-        color:rgb(204,255,0);
-        padding: 25px;
-    }
-
-    #hero h1 {
-        font-size: 50px;
-        display:block;
-        text-align:left;     
-    }
-
-    #hero h2 {
-        font-size: 25px;
-        display:block;
-        text-align:right;
-    }
+ #hero{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 30rem;
+    justify-content: center;
+    text-align: right;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-/* SECTION HERO MOBILE*/
+#hero::before {
+    content:"";
+    background-image: url("images/hero.jpg");
+    opacity: 0.5;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 30rem;
+}
+.hero1 {
+    position: relative;
+    font-size: 45px;
+    font-weight: 500;
+    color: rgb(49,11,68);
+    display:block;
+    text-align:left;
+    padding: 10px;
+    
+}
+.hero2 {
+    position: relative;
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(49,11,68);
+    display:block;
+    text-align:right;
+    padding: 10px;
+   
+ }
+
+/* SECTION HERO RESPONSIVE*/
 @media all and (max-width: 468px) {
     #hero {
-        display:flex;
-        flex-direction: column;
-        height: 20rem;
-        justify-content: center;
-        text-align: right;
-        background-color: rgb(49,11,68);
-        background-size: cover;
         padding: 10px;
-        color:rgb(204,255,0);
     }
 
-    #hero h1 {
-        font-size:30px;
+    #hero::before {
+        content:"";
+        height: 30rem;
+    }
+
+    .hero1 {
+        font-size:35px;
         display:block;
         text-align:center;
         padding: 10px;
     }
 
-    #hero h2 {
-        font-size: 18px;
+    .hero2  {
+        font-size: 22px;
+        font-weight: 500;
         display:block;
         text-align:center;
         padding:15px;
     }
 }
 
+@media all and (min-width:768px){
+    #hero{
+        padding: 25px;
+        margin: 0 20px;
+    }
+
+    .hero1 {
+        font-size: 50px;
+        display:block;
+        text-align:left;     
+    }
+
+    .hero2 {
+        font-size: 30px;
+        font-weight: 500;
+        display:block;
+        text-align:right;
+    }
+}
+
+    @media all and (min-width: 1280px) {
+        #hero{
+            margin: 0 30px;
+        }
+
+        .hero1 {
+            font-size: 50px;
+            margin-left: 50px;
+        }
+
+        .hero2  {
+            font-size: 35px;
+            margin-right: 70px;
+        }
+    }
+
+    @media all and (min-width: 1366px) { 
+        #hero {
+            margin: 0 70px;
+        }
+        hero1 {
+            font-size: 60px;
+            margin-left: 50px;
+        }
+
+        .hero2  {
+            font-size: 40px;
+            margin-right: 70px;
+        }
+    }
+
+    @media all and (min-width: 1920px) {
+        #hero{
+            margin: 0 70px;
+        }
+
+        .hero1 {
+            font-size: 60px;
+            margin-left: 80px;
+        }
+
+        .hero2 {
+            font-size: 45px;
+            margin-right: 80px;
+        }
+    }
+
+
 /* SERVICES SECTION */
 
     .services-title {
         text-align: center;
-        padding-top: 50px;
+        padding-top: 30px;
         font-size: 35px; 
         font-weight: bold;
         color: rgb(49,11,68);
@@ -312,8 +353,8 @@ a:hover{
 
     .services-description {
         text-align: center;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 30px;
+        padding-bottom: 10px;
         font-size: 45px; 
         color: rgb(49,11,68);
     }
@@ -371,6 +412,73 @@ a:hover{
 
 /* SECTION SERVICES RESPONSIVE */ 
 
+@media all and (max-width: 1920px) {
+
+    .services-title {
+        font-size: 45px; 
+        font-weight: bold;
+        margin-top: 80px;
+    }
+
+    .services-description {
+        font-size: 55px; 
+        margin-bottom: 80px;
+    }
+
+    .all-services {
+        margin: 0 150px;
+        padding-bottom: 80px;
+    }
+
+    .service-text {
+        font-size: 28px;
+        padding: 2px;
+        margin-top: 0;
+    }
+
+    .service-title {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .service-card a {
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 1366px) { 
+    .all-services {
+        margin: 0 50px;
+        padding-bottom: 50px;
+    }
+
+    .services-title {
+        font-size: 35px; 
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .services-description {
+        font-size: 35px; 
+        margin-bottom: 30px;
+    }
+
+    .service-text {
+        font-size: 18px;
+        padding: 2px;
+        margin-top: 0;
+    }
+
+    .service-title {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .service-card a {
+        font-size: 15px;
+    }
+}
+
 @media all and (max-width: 869px) {
 
     .all-services {
@@ -400,8 +508,6 @@ a:hover{
         margin: 5px;
 }
 }
-
-
 
 @media screen and (max-width: 480px) {
 
@@ -616,6 +722,10 @@ a:hover{
         padding: 20px;
     }
 
+    .cs-container1 {
+        margin-bottom: 30px;
+    }
+
 }
     
     
@@ -670,6 +780,8 @@ a:hover{
 
 .footer-col ul li a {
     font-size: 18px;
+    color: rgb(204, 255, 00);
+    text-decoration: none;
 }
 
 .footer-col ul li a:hover {

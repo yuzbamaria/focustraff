@@ -170,7 +170,30 @@ a:hover{
 
     }
 
+/* MAIN SECTION */
+.services_headline {
+    display: block;
+    font-size: 45px;
+    color: rgb(49,11,68);
+    text-align: center;
+    padding: 50px;
+}
 
+.services_main p {
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    padding: 0 30px;
+    padding-bottom: 30px;
+}
+.services_main ul {
+    padding-bottom: 30px;
+}
+.services_main li {
+    display: block;
+    font-size: 25px;
+    text-align: center;
+}
     
 
 /* FOOTER */

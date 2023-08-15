@@ -43,8 +43,8 @@
 
  <section class="form_main">
 
-    <div class="form_title">Headline</div>
-    <div class="form_description">Technical website optimization embraces a set of actions which help to improve user experience (UX) and enable search engines crawl the website. Our SEO team will provide a deep technical audit of your website to ensure that it is configured correctly and can be easily crawled and indexed by search engines. 
+    <div class="form_title"></div>
+    <div class="form_description">Knock to us and we will focus on your website performance together! We talk about complex SEO notions in simple words and make sure our clients understand the end goal of their website optimization.
     </div>
 
     <div class="form_container">  
@@ -91,7 +91,7 @@
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script type="text/javascript">
-    function sendEmail (){
+    function sendEmail () {
         Email.send({
             Host : "smtp.gmail.com",
             Username : "trafftherapy@gmail.com",
@@ -100,10 +100,11 @@
             From : "trafftherapy@gmail.com",
             Subject : "New Contact Form Enquiry",
             Body : "And this is the body"
-        }).then(
-        message => alert("mail sent successfully")
-        );
-    }
+        })
+        .then ( function (message) {
+        message => alert("mail sent successfully");
+    })
+}
 </script>
 </body>
 </html>

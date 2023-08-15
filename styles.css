@@ -191,6 +191,22 @@ a:hover{
         }
     }
 
+@media all and (min-width: 1920px) {
+    #top {
+        margin: 0 100px;
+        padding: 20px 10px;
+    }
+
+    .item.button a{
+        padding: 15px 30px;
+        border: none;
+        outline: none;
+        border-radius: 30em;
+        cursor: pointer;
+        transition: scale 0.2 ease;
+    }
+}
+
 /* SECTION HERO */
 
  #hero{
@@ -479,7 +495,7 @@ a:hover{
     }
 }
 
-@media all and (max-width: 869px) {
+@media all and (max-width: 960px) {
 
     .all-services {
         display: grid;
@@ -660,10 +676,95 @@ a:hover{
 
 
 /* CASE STUDIES  RESPONSIVE*/
-@media screen and (max-width: 960px) {
+
+@media all and (max-width: 1920px) {
+    .cs-title {
+        padding: 100px 0 5px;
+        font-size: 50px; 
+    }
+
+    .cs-title::after {
+        width: 400px;
+        margin-bottom: 65px;
+    }
+
+    .cs-description {
+        font-size: 40px;
+        color: rgb(204, 255, 00);
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .cs-container2 {
+        max-width: 100%;
+        width: 100%;
+    }
     
+    .card {
+        font-size: 35px;
+    }
+
+    .card .image {
+        height: 170px;
+        width: 170px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
     .cs-row {
         width: 100%;
+    }
+
+    .cs-title {
+        padding: 60px 0 5px;
+        font-size: 35px; 
+    }
+
+    .cs-title::after {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .cs-container2 {
+        max-width: 70%;
+        width: 100%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .cs-description {
+        font-size: 35px;
+        margin: 15px 30px;
+        padding: 10px;
+    }
+    
+    .card .image {
+        height: 150px;
+        width: 150px;
+    }
+    
+    .card {
+        font-size: 25px;
+    }
+    
+    .markers {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .cs-row {
+        width: 100%;
+    }
+
+    .cs-title {
+        padding: 30px 0 5px;
+        font-size: 30px; 
+    }
+
+    .cs-title::after {
+        width: 230px;
+        margin-bottom: 10px;
     }
 
     .cs-container2 {
@@ -675,8 +776,8 @@ a:hover{
 
     .cs-description {
         font-size: 25px;
-        margin: 25px;
-        padding: 20px;
+        margin: 15px;
+        padding: 10px;
     }
     
     .card .image {
@@ -729,12 +830,8 @@ a:hover{
 }
     
     
-    
-
 
 /* OUR TEAM */
-
-
 
 
 /* FOOTER */
@@ -743,7 +840,6 @@ a:hover{
     background-color: rgb(49,11,68);
     padding: 30px 10px;
     margin: auto;
-
 }   
 
 .footer-row {
@@ -808,6 +904,98 @@ a:hover{
 }
 
 /* FOOTER RESPONSIVE*/
+
+@media all and (max-width: 1920px) {
+    .footer {
+        padding: 50px 40px;
+        margin: auto;
+    } 
+
+    .footer-col p {
+        font-size: 35px;
+        margin-bottom: 40px;  
+    }
+    
+    .footer-col p::before {
+        width: 105px;
+    }
+    
+    .footer-col ul li {
+        margin-bottom: 20px;
+    }
+    
+    .footer-col ul li a {
+        font-size: 28px;
+    }
+    .footer-col .social-links a {
+        display: inline-block;
+        height: 80px;
+        width: 80px;
+        margin: 0 20px 20px 0;
+        line-height: 80px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .footer {
+        padding: 30px 10px;
+    } 
+
+    .footer-col p {
+        font-size: 22px;
+        margin-bottom: 20px;  
+    }
+    
+    .footer-col p::before {
+        width: 80px;
+    }
+    
+    .footer-col ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-col ul li a {
+        font-size: 18px;
+    }
+    .footer-col .social-links a {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        margin: 0 10px 10px 0;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .footer {
+        padding: 30px 10px;
+    } 
+
+    .footer-col p {
+        font-size: 22px;
+        margin-bottom: 20px;  
+    }
+    
+    .footer-col p::before {
+        width: 80px;
+    }
+    
+    .footer-col ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-col ul li a {
+        font-size: 18px;
+    }
+    .footer-col .social-links a {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        margin: 0 10px 10px 0;
+        line-height: 50px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .footer-col {
         width: 50%;

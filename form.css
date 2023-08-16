@@ -242,7 +242,7 @@ form button {
 
 @media screen and (max-width: 480px) {
 .form_container {
-    height: 90vh;
+    height: 110vh;
 }
 
 .form_main {

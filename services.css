@@ -179,19 +179,27 @@ a:hover{
     padding: 50px;
 }
 
-.services_main p {
+.services_main h5 {
     display: block;
     font-size: 25px;
     text-align: center;
     padding: 0 30px;
     padding-bottom: 30px;
 }
-.services_main ul {
+
+.services_main p {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    padding: 30px 60px;
     padding-bottom: 30px;
+}
+.services_main ul {
+    padding-bottom: 18px;
 }
 .services_main li {
     display: block;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
 }
     
